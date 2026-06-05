@@ -4,7 +4,7 @@ import Hero from "./components/brutal/hero";
 import Marcador from "./components/brutal/marcador";
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://lukapianco.dev'),
+  metadataBase: new URL('https://lukapianco.github.io/My-Portfolio'),
   title: "Luka | Desenvolvedor Front-end & Soluções Digitais",
   description: "Portfólio de Luka. Desenvolvedor focado em criar aplicações web de alto desempenho e soluções criativas utilizando Next.js, TypeScript, C# e Node.js. Explore meus projetos e entre em contato!",
   authors: [{ name: "Luka" }],
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "pt_BR",
-    url: "https://lukapianco.dev",
+    url: "https://lukapianco.github.io/My-Portfolio",
     title: "Luka | Desenvolvedor Front-end",
     description: "Criando aplicações web modernas com Next.js e TypeScript. Veja meus projetos e habilidades.",
     siteName: "Portfólio Luka",
