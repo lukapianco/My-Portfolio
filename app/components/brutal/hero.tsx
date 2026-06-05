@@ -5,6 +5,7 @@ import Badge from "../ui/Badge";
 import Tags from "../ui/tags";
 import { Play, ArrowRight } from "lucide-react";
 import BrutalLink from "../ui/BrutalLink";
+import Terminal from "../ui/terminal";
 
 
 const tags = ["TYPESCRIPT", "NEXT.JS", "REACT", "Tailwind", "Automação Digital", "C#", ".NET 8"];
@@ -31,7 +32,7 @@ function TypeWriting(){
 export default function Hero() {
 
     return (
-        <section id="hero" className="w-full py-16 px-8 block lg:flex ">
+        <section id="home" className="w-full py-16 px-8 block lg:flex gap-8 scroll-mt-28">
             {/* Esquerda */}
             <div className="w-full lg:w-[50%]">
                 <Badge>
@@ -68,11 +69,11 @@ export default function Hero() {
                     }
                 </div>
                 <div className="flex gap-4 my-8">
-                    <BrutalLink href="#projetos" bgColor="bg-accent">
+                    <BrutalLink href="#home" typeScroll={true} bgColor="bg-accent">
                         <Play className="w-4 h-4 fill-black" strokeWidth={3}/>
                         Ver Projetos
                     </BrutalLink>
-                    <BrutalLink href="#projetos" bgColor="bg-bg">
+                    <BrutalLink href="#projetos" typeScroll={true} bgColor="bg-bg">
                         <ArrowRight className="w-4 h-4" strokeWidth={3}/>
                         Contato
                     </BrutalLink>
@@ -93,7 +94,21 @@ export default function Hero() {
                 </div>
             </div>
             {/* Direita */}
-            <div className="">bbb</div>
+            <div className="mt-8 lg:mt-0 w-full lg:w-[50%] flex flex-col gap-8">
+                <Terminal/>
+
+                <div className="bg-accent p-5 shadow-brutal-lg w-full border-4 border-black flex flex-col gap-4 text-sm text-black">
+                    <p className="text-[12px]">&#47;&#47; STACK ATUAL</p>
+                    <p className="font-bold text-4xl">FULL-STACK <br/> DEVELOPER</p>
+                    <p className="w-full h-1 bg-black"></p>
+                    <p>
+                        FRONTEND → NEXT.JS + TYPESCRIPT <br/>
+                        BACKEND  → C# .NET 8 + REST APIs <br/>
+                        CLOUD    → AZURE + VERCEL <br/>
+                        TOOLS    → GIT + DOCKER + CI/CD
+                    </p>
+                </div>
+            </div>
         </section>
     );
 };

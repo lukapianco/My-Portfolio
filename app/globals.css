@@ -66,4 +66,8 @@ body {
   .shadow-brutal-accent {
     box-shadow: 8px 8px 0 0 #7fa653;
   }
+
+  .hazard-stripes{
+    background-image: repeating-linear-gradient(45deg,#000 0 14px,#7fa653 14px 28px);
+  }
 }
