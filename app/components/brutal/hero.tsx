@@ -32,14 +32,14 @@ function TypeWriting(){
 export default function Hero() {
 
     return (
-        <section id="home" className="w-full py-16 px-8 block lg:flex gap-8 scroll-mt-28">
+        <section id="home" className="w-full py-10 sm:py-16 max-md:px-4 sm:px-8 block lg:flex gap-8 scroll-mt-28">
             {/* Esquerda */}
             <div className="w-full lg:w-[50%]">
                 <Badge>
                     <span className="block w-2 h-2 bg-accent"></span>
                     DISPONÍVEL PARA PROJETOS
                 </Badge>
-                <div className="text-7xl leading-[0.95] font-black my-6 font-display">
+                <div className="text-4xl sm:text-5xl md:text-7xl leading-[0.95] font-black my-6 font-display">
                     <span className="block">
                         OLÁ,
                     </span>
@@ -69,25 +69,25 @@ export default function Hero() {
                     }
                 </div>
                 <div className="flex gap-4 my-8">
-                    <BrutalLink href="#home" typeScroll={true} bgColor="bg-accent">
+                    <BrutalLink href="#home" typeScroll={true} bgColor="bg-accent" classTags="max-md:flex-2 text-sm sm:text-base md:text-xl">
                         <Play className="w-4 h-4 fill-black" strokeWidth={3}/>
                         Ver Projetos
                     </BrutalLink>
-                    <BrutalLink href="#projetos" typeScroll={true} bgColor="bg-bg">
+                    <BrutalLink href="#projetos" typeScroll={true} bgColor="bg-bg" classTags="max-md:flex-1 text-sm sm:text-base md:text-xl">
                         <ArrowRight className="w-4 h-4" strokeWidth={3}/>
                         Contato
                     </BrutalLink>
                 </div>
-                <div className="flex gap-1 text-4xl bg-black uppercase w-fit border-4 border-black shadow-brutal">
-                    <div className="p-3 w-35 bg-bg flex flex-col">
+                <div className="flex w-full gap-1 text-4xl bg-black uppercase md:w-fit border-4 border-black shadow-brutal">
+                    <div className="p-3 sm:w-35 bg-bg flex flex-col flex-1">
                         <span className="block font-bold text-accent">4+</span>
                         <span className="text-sm">anos exp.</span>
                     </div>
-                    <div className="p-3 w-35 bg-accent flex flex-col">
+                    <div className="p-3 sm:w-35 bg-accent flex flex-col flex-1">
                         <span className="block font-bold text-4xl text-black">20</span>
                         <span className="text-sm">projetos</span>
                     </div>
-                    <div className="p-3 w-35 bg-black text-accent flex flex-col">
+                    <div className="p-3 sm:w-35 bg-black text-accent flex flex-col flex-1">
                         <span className="block font-bold text-4xl">∞</span>
                         <span className="text-sm">Café/dia</span>
                     </div>

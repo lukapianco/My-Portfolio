@@ -37,6 +37,12 @@ export const metadata: Metadata = {
       },
     ],
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Luka | Desenvolvedor Front-end",
+    description: "Desenvolvedor focado em criar aplicações web de alto desempenho.",
+    images: ["/og-image.png"],
+  },
 
   //Tirar quando lançar o portfólio
   robots: {

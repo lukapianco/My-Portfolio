@@ -30,7 +30,10 @@ export default function Header() {
         >
             <Link href="/" className="py-2.5 px-4 bg-black flex items-center gap-2 text-sm font-semibold text-accent font-mono uppercase">
                 <span className="block w-2 h-2 bg-accent"></span>
-                luka.dev
+                <span className="flex">
+                    luka
+                    <span className="hidden min-[400px]:block">.dev</span>
+                </span>
             </Link>
             <nav className="hidden md:flex items-center gap-4">
                 {Links.map((link) => (
@@ -41,7 +44,7 @@ export default function Header() {
             </nav>
             <BrutalButton>
                 <Download className="w-4 h-4" strokeWidth={3}/>
-                Baixar CV
+                <span className="hidden sm:block">Baixar</span> CV
             </BrutalButton>
         </motion.header>
     );

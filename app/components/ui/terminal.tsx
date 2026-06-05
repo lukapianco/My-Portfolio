@@ -33,7 +33,7 @@ export default function Terminal() {
     }, [visible]);
 
     return (
-        <div className="w-full divide-y-4  flex flex-col gap-1 text-4xl bg-terminal uppercase border-4 border-black shadow-brutal-lg">
+        <div className="w-full divide-y-4  flex flex-col gap-1 text-4xl bg-terminal uppercase border-4 border-black shadow-brutal">
             {/* Barra de titulo */}
             <div className="px-4 w-full h-9 flex items-center justify-between bg-[#1a1a1a]">
                 <div className="flex items-center gap-1.5">
