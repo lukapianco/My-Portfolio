@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Header from "./components/brutal/header";
+import Hero from "./components/brutal/hero";
 
 export const metadata: Metadata = {
   title: "Portifólio do Luka Piancó | Desenvolvedor Front-end",
@@ -8,8 +9,11 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <div className="relative width-full min-h-screen bg-green-200 ">
+    <div className="relative width-full min-h-screen bg-bg font-mono">
       <Header/>
+      <main>
+        <Hero/>
+      </main>
     </div>
   );
 }
