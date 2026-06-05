@@ -14,7 +14,7 @@ export default function Marcador() {
             <div className="overflow-hidden bg-black">
                 <div className="flex animate-[marquee_90s_linear_infinite] whitespace-nowrap uppercase tracking-widest">
                     {Loop.map((item, i) => (
-                        <span key={i} className="text-xl gap-2.5 font-bold text-white uppercase px-2 flex items-center py-1 bg-black">
+                        <span key={i} className="text-[18px] gap-2.5 font-bold text-white uppercase px-2 flex items-center py-1 bg-black">
                             <Star className="w-4 h-4 mr-1 fill-accent text-accent" />
                             {item}
                         </span>
