@@ -37,6 +37,12 @@ export const metadata: Metadata = {
       },
     ],
   },
+
+  //Tirar quando lançar o portfólio
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function Home() {
