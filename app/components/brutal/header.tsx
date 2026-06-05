@@ -32,7 +32,7 @@ export default function Header() {
                 <span className="block w-2 h-2 bg-accent"></span>
                 luka.dev
             </Link>
-            <nav className="flex items-center gap-4">
+            <nav className="hidden md:flex items-center gap-4">
                 {Links.map((link) => (
                     <button key={link.href} onClick={() => ToSection(link.href)} className="uppercase text-xs font-bold text-ink hover:text-accent transition-colors cursor-pointer">
                         {link.label}
