@@ -40,8 +40,12 @@ export const metadata: Metadata = {
 
   //Tirar quando lançar o portfólio
   robots: {
-    index: true,
+    index: false,
     follow: true,
+    googleBot: {
+      index: false,
+      follow: true,
+    },
   },
 };
 
