@@ -1,6 +1,6 @@
 "use client";
 
-import { LineStyle } from "../ui/Line";
+import { LineStyle } from "../ui/LineStyle";
 import Badge from "../ui/Badge";
 import { SectionTitle } from "../ui/SectionTitle/index";
 import { motion } from "framer-motion";
@@ -9,12 +9,12 @@ import Tags from "../ui/tags";
 
 const Tools = ["GIT", "DOCKER", "AZURE", "VERCEL", "SQL SERVER", "TAILWIND", "VS CODE", "FIGMA"];
 const Stack = [
-  { img: "/CSharpLogo.png", lenght: 90, label: "C SHARP", green: true },
-  { img: "/javascriptLogo.webp", lenght: 70, label: "JAVASCRIPT", green: true, white: true },
-  { img: "/typescriptLogo.png", lenght: 70, label: "TYPESCRIPT", green: false },
-  { img: "/reactLogo.png", lenght: 70, label: "REACT", green: false, white: true },
-  { img: "/nextjsLogo.webp", lenght: 70, label: "NEXT.JS", green: false, white: false },
-  { img: "/NodeJSLogo.png", lenght: 70, label: "NODE.JS", green: true },
+  { img: "https://lukapianco.github.io/My-Portfolio/CSharpLogo.png", lenght: 90, label: "C SHARP", green: true },
+  { img: "https://lukapianco.github.io/My-Portfolio/javascriptLogo.webp", lenght: 70, label: "JAVASCRIPT", green: true, white: true },
+  { img: "https://lukapianco.github.io/My-Portfolio/TypescriptLogo.png", lenght: 70, label: "TYPESCRIPT", green: false },
+  { img: "https://lukapianco.github.io/My-Portfolio/ReactLogo.png", lenght: 70, label: "REACT", green: false, white: true },
+  { img: "https://lukapianco.github.io/My-Portfolio/nextjsLogo.webp", lenght: 70, label: "NEXT.JS", green: false, white: false },
+  { img: "https://lukapianco.github.io/My-Portfolio/NodeJSLogo.png", lenght: 70, label: "NODE.JS", green: true },
 ];
 const skills = [
   { name: "C# / .NET", pg: 90 },
@@ -26,7 +26,7 @@ const skills = [
 
 export default function About(){
     return(
-        <section className="w-full py-10 max-sm:px-4 px-8 flex flex-col gap-8">
+        <section className="w-full py-15 max-sm:px-4 px-8 flex flex-col gap-8">
             <Badge addStyle="text-sm">
                 01 / SOBRE MIM
             </Badge>
@@ -73,13 +73,13 @@ export default function About(){
                         &#34;Se existe uma forma de fazer melhor, descubra-a. &#34;<br/>
                         <span>&#126;  Edison, Thomas</span>
                     </div>
-                    <div className="flex flex-col gap-3 text-[11px] font-bold">
+                    <div className="flex flex-col gap-3 text-[11px] min-[550px]:text-[13px] font-bold">
                         <span>&#47;&#47; PROFICIÊNCIA</span>
                         <div className="flex flex-col">
                             {skills.map((i) => (
                                 <div key={i.name} className="flex items-center gap-5">
                                     <span className="w-15 min-[550px]:w-25">{i.name}</span>
-                                    <div className="flex-1 h-2.5 border border-black">
+                                    <div className="flex-1 h-3 border border-black">
                                         <motion.div
                                             initial={{width: 0}}
                                             whileInView={{width: i.pg + '%'}}
@@ -123,7 +123,7 @@ export default function About(){
                     </ul>
                     <LineStyle.Strong addStyle="mt-3"/>
                     <span className="text-[11px] font-bold">&#47;&#47; FERRAMENTAS</span>
-                    <div className="flex flex-wrap gap-4 uppercase">
+                    <div className="flex flex-wrap gap-2.5 uppercase">
                         {
                             Tools.map((tag, i) => (
                                 <Tags key={tag} addStyle={i % 3 === 0 && i != 0 ? "bg-accent border-[1px] font-light px-3" : "bg-bg border-[1px] font-light px-3"}>
