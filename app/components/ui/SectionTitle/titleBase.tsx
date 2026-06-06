@@ -6,7 +6,7 @@ interface TitleBaseProps{
 export default function TitleBase({children}:TitleBaseProps){
     return(
         <h1 
-            className="flex gap-4.5"
+            className="flex  gap-3 sm:gap-3.5 md:gap-4.5"
         >
             {children}
         </h1>

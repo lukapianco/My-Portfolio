@@ -62,7 +62,7 @@ export default function Hero() {
                 <div className="flex flex-wrap gap-4 my-8 uppercase">
                     {
                         tags.map((tag, i) => (
-                            <Tags key={tag} bgColor={i % 2 === 0 ? "bg-accent" : "bg-bg"}>
+                            <Tags key={tag} addStyle={i % 2 === 0 ? "bg-accent" : "bg-bg"}>
                                 {tag}
                             </Tags>
                         ))

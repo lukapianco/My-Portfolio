@@ -26,7 +26,7 @@ export default function Header() {
             initial={{ y: -30, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.5, ease: "easeOut" }}
-            className="font-mono justify-between bg-bg sticky top-4 mx-3.5 sm:mx-8 flex px-6 py-3  border-4 border-black shadow-brutal tracking-widest"
+            className="z-10 font-mono justify-between bg-bg sticky top-4 mx-3.5 sm:mx-8 flex px-6 py-3  border-4 border-black shadow-brutal tracking-widest"
         >
             <Link href="/" className="py-2.5 px-4 bg-black flex items-center gap-2 text-sm font-semibold text-accent font-mono uppercase">
                 <span className="block w-2 h-2 bg-accent"></span>
