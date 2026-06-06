@@ -26,16 +26,16 @@ export default function Header() {
             initial={{ y: -30, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.5, ease: "easeOut" }}
-            className="font-mono justify-between bg-bg sticky top-4 mx-8 flex px-6 py-3 border-4 border-black shadow-brutal tracking-widest"
+            className="font-mono justify-between bg-bg sticky top-4 mx-3.5 sm:mx-8 flex px-6 py-3  border-4 border-black shadow-brutal tracking-widest"
         >
             <Link href="/" className="py-2.5 px-4 bg-black flex items-center gap-2 text-sm font-semibold text-accent font-mono uppercase">
                 <span className="block w-2 h-2 bg-accent"></span>
                 <span className="flex">
                     luka
-                    <span className="hidden min-[400px]:block">.dev</span>
+                    <span className="hidden min-[400px]:max-[670px]:block">.dev</span>
                 </span>
             </Link>
-            <nav className="hidden md:flex items-center gap-4">
+            <nav className="hidden min-[670px]:flex items-center gap-4">
                 {Links.map((link) => (
                     <button key={link.href} onClick={() => ToSection(link.href)} className="uppercase text-xs font-bold text-ink hover:text-accent transition-colors cursor-pointer">
                         {link.label}
@@ -44,7 +44,7 @@ export default function Header() {
             </nav>
             <BrutalButton>
                 <Download className="w-4 h-4" strokeWidth={3}/>
-                <span className="hidden sm:block">Baixar</span> CV
+                <span className="hidden min-[400px]:max-[670px]:block min-[780px]:block">Baixar</span> CV
             </BrutalButton>
         </motion.header>
     );

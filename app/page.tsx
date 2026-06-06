@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Header from "./components/brutal/header";
 import Hero from "./components/brutal/hero";
 import Marcador from "./components/brutal/marcador";
+import About from "./components/brutal/about";
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://lukapianco.github.io/My-Portfolio'),
@@ -62,6 +63,7 @@ export default function Home() {
       <main>
         <Hero/>
         <Marcador/>
+        <About/>
       </main>
     </div>
   );

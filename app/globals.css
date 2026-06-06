@@ -70,4 +70,14 @@ body {
   .hazard-stripes{
     background-image: repeating-linear-gradient(45deg,#000 0 14px,#7fa653 14px 28px);
   }
+
+  .blink::after {
+    content: "▌";
+    margin-left: 4px;
+    animation: blink 1s steps(2, start) infinite;
+    color: #7fa653;
+  }
+  @keyframes blink {
+    to { visibility: hidden; }
+  }
 }

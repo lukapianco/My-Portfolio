@@ -4,11 +4,11 @@ import { useEffect, useState } from "react";
 import Badge from "../ui/Badge";
 import Tags from "../ui/tags";
 import { Play, ArrowRight } from "lucide-react";
-import BrutalLink from "../ui/BrutalLink";
+import BrutalLink from "../ui/BrutalButton";
 import Terminal from "../ui/terminal";
 
 
-const tags = ["TYPESCRIPT", "NEXT.JS", "REACT", "Tailwind", "Automação Digital", "C#", ".NET 8"];
+const tags = ["TYPESCRIPT", "NEXT.JS", "REACT", "Tailwind", "Automação Digital", "N8N", "C#", ".NET 8"];
 const TYPE = "TRANSFORMANDO CÓDIGO\nC# E JS EM FERRAMENTAS\nPARA PESSOAS DESDE 2021_";
 
 function TypeWriting(){
@@ -21,7 +21,7 @@ function TypeWriting(){
         return () => clearTimeout(timeout); 
     }, [letras]);
     return (
-        <div className="font-mono text-[11px] p-3 text-accent whitespace-pre-wrap">
+        <div className="font-mono text-[11px] sm:text-sm p-3 text-accent whitespace-pre-wrap">
             <span className="text-white/60">{"// BIO.TXT\n"}</span>
             <span>{"> " + TYPE.slice(0, letras)}</span>
             <span className="animate-pulse">▌</span>
@@ -39,7 +39,7 @@ export default function Hero() {
                     <span className="block w-2 h-2 bg-accent"></span>
                     DISPONÍVEL PARA PROJETOS
                 </Badge>
-                <div className="text-4xl sm:text-5xl md:text-7xl leading-[0.95] font-black my-6 font-display">
+                <div className="text-4xl sm:text-5xl md:text-[62px] xl:text-7xl leading-[0.95] font-black my-6 font-display">
                     <span className="block">
                         OLÁ,
                     </span>
@@ -59,7 +59,7 @@ export default function Hero() {
                 <div className="bg-terminal border-4 border-black shadow-brutal">
                     <TypeWriting/>
                 </div>
-                <div className="flex flex-wrap gap-4 my-8">
+                <div className="flex flex-wrap gap-4 my-8 uppercase">
                     {
                         tags.map((tag, i) => (
                             <Tags key={tag} bgColor={i % 2 === 0 ? "bg-accent" : "bg-bg"}>
@@ -69,11 +69,11 @@ export default function Hero() {
                     }
                 </div>
                 <div className="flex gap-4 my-8">
-                    <BrutalLink href="#home" typeScroll={true} bgColor="bg-accent" classTags="max-md:flex-2 text-sm sm:text-base md:text-xl">
+                    <BrutalLink addStyle="bg-accent max-md:flex-2 text-sm sm:text-base md:text-base px-4 py-3 gap-2">
                         <Play className="w-4 h-4 fill-black" strokeWidth={3}/>
                         Ver Projetos
                     </BrutalLink>
-                    <BrutalLink href="#projetos" typeScroll={true} bgColor="bg-bg" classTags="max-md:flex-1 text-sm sm:text-base md:text-xl">
+                    <BrutalLink  addStyle="bg-bg    max-md:flex-1 text-sm sm:text-base md:text-base px-4 py-3 gap-2">
                         <ArrowRight className="w-4 h-4" strokeWidth={3}/>
                         Contato
                     </BrutalLink>
