@@ -39,6 +39,9 @@ body {
   .shadow-brutal {
     box-shadow: 8px 8px 0 0 #000;
   }
+  .shadow-brutal-sm-green {
+    box-shadow: 6px 6px 0 0 #7fa653;
+  }
   .shadow-brutal-hover {
     box-shadow: 8px 8px 0 0 #000;
   }

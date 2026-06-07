@@ -7,10 +7,10 @@ import { motion } from "framer-motion";
 
 const Links = [
     {label: "Home", href: "#home"},
-    {label: "Sobre", href: "#sobre"},
-    {label: "Formação", href: "#formacao"},
-    {label: "Projetos", href: "#projetos"},
-    {label: "Contato", href: "#contato"},
+    {label: "Sobre", href: "#about"},
+    {label: "Formação", href: "#education"},
+    {label: "Projetos", href: "#projects"},
+    {label: "Contato", href: "#contact"},
 ]
 
 export default function Header() {

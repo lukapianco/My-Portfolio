@@ -7,14 +7,14 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Tags from "../ui/tags";
 
-const Tools = ["GIT", "DOCKER", "AZURE", "VERCEL", "SQL SERVER", "TAILWIND", "VS CODE", "FIGMA"];
+const Tools = ["GIT", "NEXT.JS", "TYPESCRIPT", "TAILWIND", "VS CODE", "C#", "AUTOMAÇÃO DIGITAL", "IA", "SQL SERVER"];
 const Stack = [
-  { img: "https://lukapianco.github.io/My-Portfolio/CSharpLogo.png", lenght: 90, label: "C SHARP", green: true },
-  { img: "https://lukapianco.github.io/My-Portfolio/javascriptLogo.webp", lenght: 70, label: "JAVASCRIPT", green: true, white: true },
-  { img: "https://lukapianco.github.io/My-Portfolio/TypescriptLogo.png", lenght: 70, label: "TYPESCRIPT", green: false },
-  { img: "https://lukapianco.github.io/My-Portfolio/ReactLogo.png", lenght: 70, label: "REACT", green: false, white: true },
-  { img: "https://lukapianco.github.io/My-Portfolio/nextjsLogo.webp", lenght: 70, label: "NEXT.JS", green: false, white: false },
-  { img: "https://lukapianco.github.io/My-Portfolio/NodeJSLogo.png", lenght: 70, label: "NODE.JS", green: true },
+    { img: "https://lukapianco.github.io/My-Portfolio/nextjsLogo.webp", lenght: 70, label: "NEXT.JS", green: false, white: false },
+    { img: "https://lukapianco.github.io/My-Portfolio/javascriptLogo.webp", lenght: 70, label: "JAVASCRIPT", green: true, white: true },
+    { img: "https://lukapianco.github.io/My-Portfolio/ReactLogo.png", lenght: 70, label: "REACT", green: false, white: true },
+    { img: "https://lukapianco.github.io/My-Portfolio/TypescriptLogo.png", lenght: 70, label: "TYPESCRIPT", green: false },
+    { img: "https://lukapianco.github.io/My-Portfolio/NodeJSLogo.png", lenght: 70, label: "NODE.JS", green: true },
+    { img: "https://lukapianco.github.io/My-Portfolio/CSharpLogo.png", lenght: 90, label: "C SHARP", green: true },
 ];
 const skills = [
   { name: "C# / .NET", pg: 90 },
@@ -26,8 +26,8 @@ const skills = [
 
 export default function About(){
     return(
-        <section className="w-full py-15 max-sm:px-4 px-8 flex flex-col gap-8">
-            <Badge addStyle="text-sm">
+        <section id="about" className="w-full py-15 max-sm:px-4 px-8 flex flex-col gap-8 scroll-mt-15 md:mt-7">
+            <Badge StylizedBackground={false} StylizedBorder={false} addStyle="text-sm">
                 01 / SOBRE MIM
             </Badge>
             <LineStyle.DashedLine/>
@@ -104,21 +104,22 @@ export default function About(){
                         {Stack.map((i) => (
                             <motion.li 
                                 key={i.label}
-                                whileHover={{ x: -3, y: -3, boxShadow: "10px 10px 0 0 #000" }}
-                                whileTap={{ x: 4, y: 4, boxShadow: "0px 0px 0 0 #000" }}
+                                whileHover={{ x: -3, y: -3, boxShadow: "9px 9px 0 0 #000" }}
+                                whileTap={{ x: 4, y: 4, boxShadow: "2px 2px 0 0 #000" }}
                                 initial={{ boxShadow: "6px 6px 0 0 #000" }}
                                 transition={{ type: "spring", stiffness: 500, damping: 22 }}
-                                className={`relative aspect-square ${i.green ? 'bg-accent' : 'bg-black text-accent'} ${i.white ? "bg-white text-black" : ""} gap-4 flex flex-col justify-center items-center font-display font-bold border-4 border-black shadow-brutal select-none cursor-pointer`}>
-                                    <Image 
-                                        width={i.lenght}
-                                        height={i.lenght}
-                                        src={i.img}
-                                        alt={"Logo do " + i.label}
-                                        className="max-md:w-15 max-sm:w-18"
-                                    />
-                                    <span className="text-[14px] tracking-[2px]">{i.label}</span>
-                                    <div className="w-4 h-4 absolute bg-white right-0 top-0 border-l-4 border-b-4 border-black"></div>
-                                </motion.li>
+                                className={`relative aspect-square ${i.green ? 'bg-accent' : 'bg-black text-accent'} ${i.white ? "bg-white text-black" : ""} gap-4 flex flex-col justify-center items-center font-display font-bold border-4 border-black shadow-brutal select-none cursor-pointer`}
+                                >
+                                <Image 
+                                    width={i.lenght}
+                                    height={i.lenght}
+                                    src={i.img}
+                                    alt={"Logo do " + i.label}
+                                    className="max-md:w-15 max-sm:w-18 pointer-events-none"
+                                />
+                                <span className="text-[14px] tracking-[2px]">{i.label}</span>
+                                <div className="w-4 h-4 absolute bg-white right-0 top-0 border-l-4 border-b-4 border-black"></div>
+                            </motion.li>
                         ))}
                     </ul>
                     <LineStyle.Strong addStyle="mt-3"/>
@@ -126,7 +127,7 @@ export default function About(){
                     <div className="flex flex-wrap gap-2.5 uppercase">
                         {
                             Tools.map((tag, i) => (
-                                <Tags key={tag} addStyle={i % 3 === 0 && i != 0 ? "bg-accent border-[1px] font-light px-3" : "bg-bg border-[1px] font-light px-3"}>
+                                <Tags StylizedBorder={false} key={tag} addStyle={i % 3 === 0 && i != 0 ? "bg-accent border-[1px] font-light px-3" : "bg-bg border-[1px] font-light px-3"}>
                                     {tag}
                                 </Tags>
                             ))
