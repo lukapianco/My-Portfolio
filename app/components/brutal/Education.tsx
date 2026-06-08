@@ -178,19 +178,16 @@ export default function Education(){
                             </ul>
                         </Terminal.console>
                     </Terminal.base>
-                    <div className="flex w-full gap-1 text-4xl bg-black uppercase border-4 border-black shadow-brutal">
+                    <motion.div 
+                            initial={{y: -20, x: -10,opacity: 0}}
+                            whileInView={{y: 0, x: 0, opacity: 1}}
+                            viewport={{once: true}}
+                            transition={{ duration: 0.7, ease: "easeOut" }}
+                            className="flex w-full gap-1 text-4xl bg-black uppercase border-4 border-black shadow-brutal"
+                        >
                         <div className="p-3 sm:w-35 bg-bg flex flex-col flex-1 items-center">
                             <span className="block font-bold text-accent">
                                 <CountPlataformCourse/>
-                                {/* {EducationList.Cursos.map((item, i) => {
-                                    let coursesNumber = [];
-                                    coursesNumber.push(EducationList.Cursos[i].plataform)
-                                    return (
-                                        <>
-                                            {coursesNumber.length}
-                                        </>
-                                    )
-                                })} */}
                             </span>
                             <span className="text-sm">Plataformas</span>
                         </div>
@@ -202,7 +199,7 @@ export default function Education(){
                             <span className="block"><Infinity/></span>
                             <span className="text-sm">Aprendendo</span>
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
             </div>
         </section>

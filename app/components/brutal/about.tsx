@@ -7,21 +7,36 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Tags from "../ui/tags";
 
+type TechStack = {
+    img: string;
+    length: number;
+    label: string;
+    green?: boolean;
+    white?: boolean;
+};
+
+type TechSkills = {
+    name: string,
+    pg: number
+}
+
 const Tools = ["GIT", "NEXT.JS", "TYPESCRIPT", "TAILWIND", "VS CODE", "C#", "AUTOMAÇÃO DIGITAL", "IA", "SQL SERVER"];
-const Stack = [
-    { img: "https://lukapianco.github.io/My-Portfolio/nextjsLogo.webp", lenght: 70, label: "NEXT.JS", green: false, white: false },
-    { img: "https://lukapianco.github.io/My-Portfolio/javascriptLogo.webp", lenght: 70, label: "JAVASCRIPT", green: true, white: true },
-    { img: "https://lukapianco.github.io/My-Portfolio/ReactLogo.png", lenght: 70, label: "REACT", green: false, white: true },
-    { img: "https://lukapianco.github.io/My-Portfolio/TypescriptLogo.png", lenght: 70, label: "TYPESCRIPT", green: false },
-    { img: "https://lukapianco.github.io/My-Portfolio/NodeJSLogo.png", lenght: 70, label: "NODE.JS", green: true },
-    { img: "https://lukapianco.github.io/My-Portfolio/CSharpLogo.png", lenght: 90, label: "C SHARP", green: true },
+const TechStack: TechStack[] = [
+    { img: "https://lukapianco.github.io/My-Portfolio/nextjsLogo.webp", length: 70, label: "NEXT.JS", green: false, white: false },
+    { img: "https://lukapianco.github.io/My-Portfolio/javascriptLogo.webp", length: 70, label: "JAVASCRIPT", green: true, white: true },
+    { img: "https://lukapianco.github.io/My-Portfolio/ReactLogo.png", length: 70, label: "REACT", green: false, white: true },
+    { img: "https://lukapianco.github.io/My-Portfolio/TypescriptLogo.png", length: 70, label: "TYPESCRIPT", green: false },
+    { img: "https://lukapianco.github.io/My-Portfolio/NodeJSLogo.png", length: 70, label: "NODE.JS", green: true },
+    { img: "https://lukapianco.github.io/My-Portfolio/CSharpLogo.png", length: 90, label: "C SHARP", green: true },
 ];
-const skills = [
-  { name: "C# / .NET", pg: 90 },
-  { name: "TYPESCRIPT", pg: 85 },
-  { name: "NEXT.JS", pg: 80 },
-  { name: "REACT", pg: 82 },
-  { name: "NODE.JS", pg: 72 },
+
+
+const TechSkills: TechSkills[]= [
+    { name: "C# / .NET", pg: 90 },
+    { name: "TYPESCRIPT", pg: 85 },
+    { name: "NEXT.JS", pg: 80 },
+    { name: "REACT", pg: 82 },
+    { name: "NODE.JS", pg: 72 },
 ];
 
 export default function About(){
@@ -76,7 +91,7 @@ export default function About(){
                     <div className="flex flex-col gap-3 text-[11px] min-[550px]:text-[13px] font-bold">
                         <span>&#47;&#47; PROFICIÊNCIA</span>
                         <div className="flex flex-col">
-                            {skills.map((i) => (
+                            {TechSkills.map((i) => (
                                 <div key={i.name} className="flex items-center gap-5">
                                     <span className="w-15 min-[550px]:w-25">{i.name}</span>
                                     <div className="flex-1 h-3 border border-black">
@@ -101,18 +116,20 @@ export default function About(){
                 <div className="lg:w-[50%] flex flex-col gap-4">
                     <span className="text-[11px] font-bold">&#47;&#47; PROFICIÊNCIA</span>
                     <ul className="grid grid-cols-1 min-[425px]:grid-cols-2 sm:grid-cols-3 list-none gap-5">
-                        {Stack.map((i) => (
+                        {TechStack.map((i) => (
                             <motion.li 
                                 key={i.label}
                                 whileHover={{ x: -3, y: -3, boxShadow: "9px 9px 0 0 #000" }}
                                 whileTap={{ x: 4, y: 4, boxShadow: "2px 2px 0 0 #000" }}
-                                initial={{ boxShadow: "6px 6px 0 0 #000" }}
+                                initial={{ boxShadow: "6px 6px 0 0 #000", x: -10, y: -20 }}
+                                whileInView={{y:0, x:0}}
+                                viewport={{once: true}}
                                 transition={{ type: "spring", stiffness: 500, damping: 22 }}
                                 className={`relative aspect-square ${i.green ? 'bg-accent' : 'bg-black text-accent'} ${i.white ? "bg-white text-black" : ""} gap-4 flex flex-col justify-center items-center font-display font-bold border-4 border-black shadow-brutal select-none cursor-pointer`}
                                 >
                                 <Image 
-                                    width={i.lenght}
-                                    height={i.lenght}
+                                    width={i.length}
+                                    height={i.length}
                                     src={i.img}
                                     alt={"Logo do " + i.label}
                                     className="max-md:w-15 max-sm:w-18 pointer-events-none"

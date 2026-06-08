@@ -4,6 +4,7 @@ import Hero from "./components/brutal/hero";
 import Marcador from "./components/brutal/marcador";
 import About from "./components/brutal/about";
 import Education from "./components/brutal/Education";
+import Projects from "./components/brutal/projects";
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://lukapianco.github.io/My-Portfolio'),
@@ -66,6 +67,7 @@ export default function Home() {
         <Marcador/>
         <About/>
         <Education/>
+        <Projects/>
       </main>
     </div>
   );
