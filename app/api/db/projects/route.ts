@@ -1,6 +1,8 @@
 import { NextResponse } from 'next/server';
 import type { ProjectProps } from '@/types/projects';
 
+export const dynamic = "force-static";
+
 const ProjectsList: ProjectProps[] = [
     {
         name: "MANGA DOWNLOADER",
