@@ -74,6 +74,13 @@ body {
     background-image: repeating-linear-gradient(45deg,#000 0 14px,#7fa653 14px 28px);
   }
 
+  .grid-paper {
+    background-image:
+      linear-gradient(rgba(0,0,0,0.08) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0,0,0,0.08) 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+
   .blink::after {
     content: "▌";
     margin-left: 4px;
