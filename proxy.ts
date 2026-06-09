@@ -7,7 +7,7 @@ const PublicRoutes = [
 
 const REDIRECT_WHEN_NOT_AUTHENTICATED_ROUTE = "/signin";
 
-export function middleware(request: NextRequest){
+export function proxy(request: NextRequest){
     const path = request.nextUrl.pathname;
     const publicRoute = PublicRoutes.find(route => route.path === path);
     const authToken = request.cookies.get('token');
