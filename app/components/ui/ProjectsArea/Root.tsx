@@ -8,7 +8,7 @@ import BrutalButton from "../BrutalButton";
 
 const FILTERS = ["TODOS", "FRONTEND", "BACKEND", "FULL-STACK"] as const;
 
-export default function RootProjectsArea({listProject}: ProjectProps){
+export default function RootProjectsArea(){
     const [buttonFilters, setFilters] = useState<"TODOS" | "FRONTEND" | "BACKEND" | "FULL-STACK">("TODOS")
 
     return(
@@ -49,7 +49,7 @@ export default function RootProjectsArea({listProject}: ProjectProps){
                             </BrutalButton>
                             <BrutalButton addStyle="flex-1 py-2 justify-center">
                                 <Code2/>
-                                DEMO
+                                CODE
                             </BrutalButton>
                         </div>
                     </div>
