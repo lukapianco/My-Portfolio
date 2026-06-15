@@ -3,13 +3,11 @@ import Badge from "../ui/Badge";
 import { LineStyle } from "../ui/LineStyle";
 import { ProjectArea } from "../ui/ProjectsArea";
 import { SectionTitle } from "../ui/SectionTitle";
+import { GetStaticProjects } from "@/app/lib/products";
 
 export default async function Projects(){
-    const response = await fetch("http://localhost:3000/api/db/projects", {
-        cache: 'no-store'
-    });
-
-    const ListProjects: ProjectProps = await response.json();
+    const ProjectsList: Array<ProjectProps> = await GetStaticProjects();
+    console.log(ProjectsList);
 
     return(
         <section id="projects" className="w-full py-15 max-sm:px-4 px-8 flex flex-col gap-8 scroll-mt-15 md:mt-7">

@@ -1,9 +1,6 @@
-import { NextResponse } from 'next/server';
 import type { ProjectProps } from '@/types/projects';
 
-export const dynamic = "force-static";
-
-const ProjectsList: ProjectProps[] = [
+export const ProjectsList: ProjectProps[] = [
     {
         name: "MANGA DOWNLOADER",
         descriptions: {
@@ -62,10 +59,8 @@ const ProjectsList: ProjectProps[] = [
             },
         ]
     },
-]
+];
 
-export async function GET() {
-    return NextResponse.json({
-        projects: ProjectsList
-    });
+export async function GetStaticProjects(){
+    return ProjectsList;
 }

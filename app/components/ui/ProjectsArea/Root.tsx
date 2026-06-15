@@ -1,6 +1,5 @@
 "use client";
 
-import { ProjectProps } from "@/types/projects";
 import { Code2, Flag, Play } from "lucide-react";
 import { useState } from "react";
 import Tags from "../tags";
@@ -22,12 +21,11 @@ export default function RootProjectsArea(){
                         >
                         {f}
                     </button>
-
                 ))}
             </div>
             <ul className="grid grid-cols-2 lg:grid-cols-3 list-none">
                 <li className="border-4 border-black shadow-brutal bg-white">
-                    <div className="aspect-16/10 bg-[#cfe1b3] grid-paper flex items-center justify-center">
+                    <div className="aspect-16/9 bg-[#cfe1b3] grid-paper flex items-center justify-center border-b-4 border-black">
                         <Flag width={40} height={35} opacity={0.5}/>
                     </div>
                     <div className="flex flex-col p-5">
