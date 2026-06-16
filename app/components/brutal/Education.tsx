@@ -7,6 +7,7 @@ import { EducationCard }  from "../ui/EducationCard/index";
 import { LineStyle } from "../ui/LineStyle";
 import { SectionTitle } from "../ui/SectionTitle";
 import { Terminal } from "../ui/Terminal";
+import { CalcularPorcentagemDecorrida } from "@/app/lib/dateCalculate";
 
 const EducationList = {
     Estudo: [
@@ -16,7 +17,10 @@ const EducationList = {
             completed: false,
             statusAndEnd: "FEV 2026 - SET 2027",
             ShowProgress: true,
-            progress: 10,
+            progress: {
+                dataInicio: "01/03/2026", 
+                dataFinal: "01/09/2027"
+            },
             prograssStatus: "Em andamento",
             Tags: ["IA", "Automação Digital", "Low Code", "N8N"],
             emphasis: null,
@@ -28,7 +32,10 @@ const EducationList = {
             completed: true,
             statusAndEnd: "MAI 2024 - DEZ 2025",
             ShowProgress: false,
-            progress: 100,
+            progress:{
+                dataInicio: "01/05/2026", 
+                dataFinal: "20/12/2025"
+            },
             prograssStatus: "Finalizada",
             Tags: ["Matemática", "Física", "Química", "ITA Prep.", "Exatas"],
             emphasis: "Aprovado na 1ª turma preparatória para o ITA do estado do Ceará — programa desenvolvido em parceria com o Colégio Ari de Sá, referência nacional em pré-vestibular de alta performance.",
@@ -122,7 +129,7 @@ export default function Education(){
                                     </EducationCard.EmphasisArea>
                                 }
                                 {i.ShowProgress &&
-                                    <EducationCard.ProgressBar Progress={i.progress} SubTitle={i.prograssStatus}/>
+                                    <EducationCard.ProgressBar Progress={CalcularPorcentagemDecorrida(i.progress.dataInicio, i.progress.dataFinal)} SubTitle={i.prograssStatus}/>
                                 }
                                 <EducationCard.ECTags TagList={EducationList.Estudo[a].Tags}/>
                             </EducationCard.Main>
