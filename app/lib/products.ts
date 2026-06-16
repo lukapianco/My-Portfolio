@@ -59,6 +59,80 @@ export const ProjectsList: ProjectProps[] = [
             },
         ]
     },
+    {
+        name: "MANGA Reader",
+        descriptions: {
+            card: "Projeto com Docker para VocÊ armazenar e ler seus mangás favoritos!",
+            modal: ""
+        },
+        year: 2026,
+        cat: "FULL-STACK",
+        tags:["DOCKER","TRUENAS", "HOMELAB", "NEXT.JS", "NODE JS"],
+        codeLink: "https://github.com/lukapianco/My-Portfolio",
+        demoLink: "https://lukapianco.github.io/My-Portfolio/",
+        midiaSection: true,
+        banner: "",
+        demoVideo: null,
+        isOnAir: true,
+        interfacePrintScreen: [
+            "https://github.com/lukapianco/My-Portfolio/blob/main/public/PrePhotoPortfolio.png?raw=true"
+        ],
+        featured: true,
+        inDev: false,
+        version: "1.0",
+        BulletPoints: null,
+        metrics: [
+            {
+                emphasis: "98",
+                name: "LIGHTHOUSE"
+            },
+            {
+                emphasis: "50K",
+                name: "EVENTOS/DIA"
+            },
+            {
+                emphasis: "12ms",
+                name: "LATÊNCIA API"
+            },
+        ]
+    },
+    {
+        name: "LK Streaming",
+        descriptions: {
+            card: "Plataforma local para assistir aos seus filmes favoritos!",
+            modal: ""
+        },
+        year: 2026,
+        cat: "FULL-STACK",
+        tags:["DOCKER","TRUENAS", "HOMELAB", "NEXT.JS", "NODE JS"],
+        codeLink: "https://github.com/lukapianco/My-Portfolio",
+        demoLink: "https://lukapianco.github.io/My-Portfolio/",
+        midiaSection: true,
+        banner: "",
+        demoVideo: null,
+        isOnAir: true,
+        interfacePrintScreen: [
+            "https://github.com/lukapianco/My-Portfolio/blob/main/public/PrePhotoPortfolio.png?raw=true"
+        ],
+        featured: true,
+        inDev: false,
+        version: "1.0",
+        BulletPoints: null,
+        metrics: [
+            {
+                emphasis: "98",
+                name: "LIGHTHOUSE"
+            },
+            {
+                emphasis: "50K",
+                name: "EVENTOS/DIA"
+            },
+            {
+                emphasis: "12ms",
+                name: "LATÊNCIA API"
+            },
+        ]
+    },
 ];
 
 export async function GetStaticProjects(){
