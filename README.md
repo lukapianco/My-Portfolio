@@ -1,36 +1,152 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 💼 Luka Piancó - Portfolio
 
-## Getting Started
+![Next.js](https://img.shields.io/badge/Next.js-16-black)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6)
+![Tailwind](https://img.shields.io/badge/Tailwind-06B6D4)
+![Motion](https://img.shields.io/badge/Motion-FF0080)
+![License](https://img.shields.io/badge/License-MIT-green)
 
-First, run the development server:
+Um portfólio moderno desenvolvido para apresentar projetos, habilidades, formação e experiências de forma criativa e interativa.
+
+Me inspirei em interfaces de com terminal e também no estilo NeoBrutalist para o Design. O projeto combina animações suaves, componentes reutilizáveis e uma arquitetura organizada utilizando o App Router do Next.js.
+
+## 🌐 Demo
+
+🔗 Acesse o portfólio:
+
+https://lukapianco.github.io/My-Portfolio/
+
+## 📸 Preview
+
+![Portfolio Preview](https://github.com/lukapianco/My-Portfolio/blob/main/public/PrePhotoPortfolio.png?raw=true)
+
+
+---
+
+## ✨ Funcionalidades
+
+- Landing Page interativa
+- Área de projetos com filtros
+- Modal para detalhes dos projetos
+- Design responsivo
+- Animações com Motion
+- Componentes reutilizáveis
+- Interface inspirada em terminal Linux
+- Estilo visual NeoBrutalist
+- Arquitetura organizada com App Router
+
+---
+
+## 🚀 Tecnologias Utilizadas
+
+### Frontend
+
+- Next.js 16
+- React
+- TypeScript
+- Tailwind CSS
+- Motion
+- Lucide React
+
+### Ferramentas
+
+- ESLint
+- Git
+- GitHub Pages
+
+---
+
+## 📁 Estrutura do Projeto
+
+```text
+app/
+├── (public)/
+├── (private)/
+├── components/
+│   ├── brutal/
+│   └── ui/
+├── lib/
+├── interface/
+├── types/
+└── globals.css
+```
+
+### Organização
+
+- **components/brutal** → Componentes específicos do design principal.
+- **components/ui** → Componentes reutilizáveis da interface.
+- **types** → Tipagens TypeScript.
+- **lib** → Utilidades e configurações.
+- **(public)** → Rotas públicas.
+- **(private)** → Estrutura reservada para futuras áreas privadas.
+
+---
+
+## ⚙️ Instalação
+
+Clone o repositório:
+
+```bash
+git clone https://github.com/lukapianco/My-Portfolio.git
+```
+
+Entre na pasta:
+
+```bash
+cd My-Portfolio
+```
+
+Instale as dependências:
+
+```bash
+npm install
+```
+
+Execute o ambiente de desenvolvimento:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abra:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```text
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 📌 Roadmap
 
-To learn more about Next.js, take a look at the following resources:
+- [x] Landing Page
+- [x] Seção Sobre
+- [x] Formação
+- [x] Modal de Projetos
+- [ ] Adicionar novos projetos
+- [ ] Página individual para projetos
+- [ ] Internacionalização (PT-BR / EN)
+- [ ] Página própria Projetos
+- [ ] Integração com minha API
+- [ ] Login para Dashboard
+- [ ] Dashboard funcional e que altere dados da interface
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🎯 Objetivo
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+Desenvolvi este projeto para servir como meu portfólio profissional atual e meu laboratório de experimentação a novas tecnologias, padrões de arquiterura e experiências de interface. Através dele pretendo carregar os conhecimentos obtidos e aplicar em novos projetos.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📫 Contato
+
+- LinkedIn: www.linkedin.com/in/lukapianco
+- GitHub: https://github.com/lukapianco
+
+---
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT.
+
+Sinta-se livre para estudar o código, utilizar ideias e contribuir com melhorias.
