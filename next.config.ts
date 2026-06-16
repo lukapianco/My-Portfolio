@@ -4,7 +4,7 @@ const nextConfig: NextConfig = {
   /* config options here */
   images: {
     remotePatterns: [
-      new URL('https://lukapianco.github.io/My-Portfolio/**')
+      new URL('https://lukapianco.github.io/My-Portfolio/**'),
     ],
   },
 };

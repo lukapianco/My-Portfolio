@@ -110,11 +110,11 @@ export default function Hero() {
                     }
                 </div>
                 <div className="flex gap-4 my-8">
-                    <BrutalLink onSubmitAction={() => ScrollTo('#about')} addStyle="bg-accent max-md:flex-2 text-sm sm:text-base md:text-base px-4 py-3 gap-2">
+                    <BrutalLink onSubmitAction={() => ScrollTo('#about')} addStyle="bg-accent max-md:flex-2 text-sm sm:text-base md:text-base px-4 py-3 gap-2 cursor-pointer">
                         <Play className="w-4 h-4 fill-black" strokeWidth={3}/>
                         Ver Projetos
                     </BrutalLink>
-                    <BrutalLink onSubmitAction={() => ScrollTo('#education')}  addStyle="bg-bg    max-md:flex-1 text-sm sm:text-base md:text-base px-4 py-3 gap-2">
+                    <BrutalLink onSubmitAction={() => ScrollTo('#education')}  addStyle="bg-bg    max-md:flex-1 text-sm sm:text-base md:text-base px-4 py-3 gap-2 cursor-pointer">
                         <ArrowRight className="w-4 h-4" strokeWidth={3}/>
                         Contato
                     </BrutalLink>

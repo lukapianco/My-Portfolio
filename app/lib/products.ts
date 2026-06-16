@@ -8,7 +8,7 @@ export const ProjectsList: ProjectProps[] = [
             modal: ""
         },
         year: 2023,
-        cat: "FULL-STACK",
+        cat: "BACKEND",
         tags:["C#", ".NET 8", "PUPPETEER", "HTML AGILITY", "ASYNC"],
         codeLink: "https://github.com/lukapianco/mangaSharp",
         midiaSection: false,
@@ -34,7 +34,7 @@ export const ProjectsList: ProjectProps[] = [
         codeLink: "https://github.com/lukapianco/My-Portfolio",
         demoLink: "https://lukapianco.github.io/My-Portfolio/",
         midiaSection: true,
-        banner: "https://github.com/lukapianco/My-Portfolio/blob/main/public/PrePhotoPortfolio.png?raw=true",
+        banner: "https://lukapianco.github.io/My-Portfolio/PrePhotoPortfolio.png",
         demoVideo: null,
         isOnAir: true,
         interfacePrintScreen: [

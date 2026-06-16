@@ -42,7 +42,7 @@ export default function Header() {
                     </button>
                 ))}
             </nav>
-            <BrutalButton>
+            <BrutalButton addStyle="cursor-pointer">
                 <Download className="w-4 h-4" strokeWidth={3}/>
                 <span className="hidden min-[400px]:max-[670px]:block min-[780px]:block">Baixar</span> CV
             </BrutalButton>
