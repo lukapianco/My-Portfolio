@@ -30,7 +30,7 @@
 
 body {
   background-color: var(--color-bg);
-  font-family: var(--font-display);
+  font-family: var(--font-mono);
   color: #000000;
 }
 
@@ -79,6 +79,13 @@ body {
       linear-gradient(rgba(0,0,0,0.08) 1px, transparent 1px),
       linear-gradient(90deg, rgba(0,0,0,0.08) 1px, transparent 1px);
     background-size: 20px 20px;
+  }
+
+  .grid-paper-login {
+    background-image: 
+      linear-gradient(rgba(127,166,83,0.08) 1px, transparent 1px), 
+      linear-gradient(90deg, rgba(127,166,83,0.08) 1px, transparent 1px);
+    background-size: 32px 32px;
   }
 
   .blink::after {
