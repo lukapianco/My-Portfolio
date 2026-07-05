@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export function CTA(){
     return(
-        <section className="py-15 max-sm:px-4 px-8">
+        <section className="py-15 max-sm:px-4 px-8" id="contact">
             <div className="relative flex text-white">
                 <div className="absolute -bottom-2 -right-2 inset-0 bg-[#7fa653] border-4 border-black translate-x-3 translate-y-3" />
                 <div className="z-10 bg-black p-10 flex w-full gap-5 md:gap-12 max-lg:flex-col lg:justify-between">
