@@ -125,7 +125,6 @@ http://localhost:3000
 - [ ] Adicionar novos projetos
 - [ ] Página individual para projetos
 - [ ] Internacionalização (PT-BR / EN)
-- [ ] Página própria Projetos
 - [ ] Integração com minha API
 - [ ] Login para Dashboard
 - [ ] Dashboard funcional e que altere dados da interface
@@ -140,7 +139,7 @@ Desenvolvi este projeto para servir como meu portfólio profissional atual e meu
 
 ## 📫 Contato
 
-- LinkedIn: www.linkedin.com/in/lukapianco
+- LinkedIn: www.linkedin.com/in/luka-pianco
 - GitHub: https://github.com/lukapianco
 
 ---
