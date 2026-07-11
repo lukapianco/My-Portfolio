@@ -1,9 +1,9 @@
 import { Star } from "lucide-react";
 
 const Itens = [
-  "GIT", "FULL-STACK DEV", "AUTOMAÇÃO DIGITAL", "IA",
-  "OPEN SOURCE", "C# .NET", "REACT", "NEXT.JS", "TYPESCRIPT",
-  "TAILWIND", "NODE.JS",
+    "GIT", "FULL-STACK DEV", "AUTOMAÇÃO DIGITAL", "IA",
+    "OPEN SOURCE", "C# .NET", "REACT", "NEXT.JS", "TYPESCRIPT",
+    "TAILWIND", "NODE.JS",
 ];
 
 export default function Marcador() {

@@ -115,7 +115,7 @@ export default function About(){
                 {/* Direita */}
                 <div className="lg:w-[50%] flex flex-col gap-4">
                     <span className="text-[11px] font-bold">&#47;&#47; PROFICIÊNCIA</span>
-                    <ul className="grid grid-cols-1 min-[425px]:grid-cols-2 sm:grid-cols-3 list-none gap-5">
+                    <ul className="grid grid-cols-2 min-[425px]:grid-cols-2 sm:grid-cols-3 list-none gap-5">
                         {TechStack.map((i) => (
                             <motion.li 
                                 key={i.label}
